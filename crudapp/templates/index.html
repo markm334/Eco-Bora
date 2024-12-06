@@ -1,0 +1,569 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Eco-bora</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="{% static 'assets/logo/favicon.jpg' %}"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css'%}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{% static 'assets/css/linearicons.css' %}">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="{% static '' %}assets/css/flaticon.css' %}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static 'assets/css/bootsnav.css' %}" >
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+        
+
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        -->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand" href="index.html">ECO-BORA<span></span></a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class=" scroll active"><a href>home</a></li>
+				                    <li class="scroll"><a href>service</a></li>
+				                    <li class="scroll"><a href>featured cars</a></li>
+				                    <li class="scroll"><a href>new cars</a></li>
+				                    <li class="scroll"><a href>brands</a></li>
+				                    <li class="scroll"><a href>contact</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>Don't Struggle with Food Stuff because we got YOU</h2>
+					<p>
+                       Eco-Bora ensures farmers have a guaranteed market for their produce, eliminating the risks of post-harvest losses. By connecting farmers directly to customers through a streamlined platform, Eco-Bora facilitates timely product visibility and bookings.
+					</p>
+
+				</div>
+			</div>
+
+			 <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="model-search-content">
+                    <div class="row text-center">
+                        <h2>Select Your Role</h2>
+                           <div class="col-md-6 col-sm-12">
+                               <button class="btn btn-primary user-btn" onclick="redirectToFarmerForm()">Farmer</button>
+                          </div>
+                                <div class="col-md-6 col-sm-12">
+                                           <button class="btn btn-secondary user-btn" onclick="redirectToCustomerForm()">Customer</button>
+                                </div>
+                    </div>
+
+                    <!-- Farmer-specific fields -->
+                        <div id="farmer-options" class="role-options" style="display: none;">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Customer-specific fields -->
+                    <div id="customer-options" class="role-options" style="display: none;">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+             <script src="{% static 'assets/js/scripts.js' %}"></script>
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--service start -->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car"></i>
+								</div>
+								<h2><a href="#">Fresh from Farm to Table <span> of</span> car</a></h2>
+								<p>
+									Our streamlined farm-to-factory supply chain guarantees a constant flow of fresh produce, helping factories maintain high production standards with minimal waste.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-repair"></i>
+								</div>
+								<h2><a href="#">Taste the Difference</a></h2>
+								<p>
+									With our commitment to quality, factories can access locally grown, freshly delivered produce that makes all the difference in the final product’s taste and appeal.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-1"></i>
+								</div>
+								<h2><a href="#">Fresh, Healthy, and Sustainable</a></h2>
+								<p>
+									For industries focused on sustainability, sourcing ingredients from Eco-Bora ensures that all products are grown using environmentally responsible methods, enhancing their corporate social responsibility profile.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+    <p>Checkout <span>the</span> latest FoodStuff</p>
+    <h2>Newest Foodstuff</h2>
+</div>
+
+<div class="row">
+    <!-- Container 1 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="food-container">
+            <img src="{% static 'assets/images/food1.jpg' %}" alt="Foodstuff 1" class="img-fluid">
+            <h3>Fresh Apples</h3>
+        </div>
+    </div>
+
+    <!-- Container 2 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="food-container">
+            <img src="{% static 'assets/images/food2.jpg' %}" alt="Foodstuff 2" class="img-fluid">
+            <h3>Mangoes</h3>
+        </div>
+    </div>
+
+    <!-- Container 3 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="food-container">
+            <img src="{% static 'assets/images/food3.jpg' %}" alt="Foodstuff 3" class="img-fluid">
+            <h3>Banana</h3>
+        </div>
+    </div>
+
+    <!-- Container 4 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="food-container">
+            <img src="{% static 'assets/images/food4.jpg' %}" alt="Foodstuff 4" class="img-fluid">
+            <h3>Pawpaw</h3>
+        </div>
+    </div>
+
+    <!-- Container 5 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="food-container">
+            <img src="{% static 'assets/images/food5.jpg' %}" alt="Foodstuff 5" class="img-fluid">
+            <h3>Tomatoes</h3>
+        </div>
+    </div>
+
+    <!-- Container 6 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="food-container">
+            <img src="{% static 'assets/images/food6.jpg' %}" alt="Foodstuff 6" class="img-fluid">
+            <h3>Green Vegetables</h3>
+        </div>
+    </div>
+</div>
+<!--/.section-header-->
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{% static 'assets/images/new-cars-model/veg.jpg'%}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Fresh Farm <span>Vegetable</span></a></h2>
+											<p>
+											From leafy greens to root vegetables, our range includes a variety of options that not only support a balanced diet but also contribute to a healthier, more sustainable way of living.
+
+												</p>
+											<p class="new-cars-para2">
+											🌽🥕🌱 Packed with essential vitamins, minerals, and antioxidants, our vegetables are cultivated with care and sustainability in mind, ensuring that every bite is as fresh and flavorful as nature intended.
+
+
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{% static 'assets/images/new-cars-model/indu.jpg'%}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Farm Product Factory</a></h2>
+											<p>
+												A Farm Product Factory is where nature’s harvest meets innovation, turning fresh, high-quality farm produce into delicious, sustainable products that nourish communities and create lasting connections between farmers, factories, and consumers. It's a place where the heart of farming and the art of production come together to bring the finest flavors from farm to table.
+                                            </p>
+											<p class="new-cars-para2">
+												With our focus on customer satisfaction, we help factories maintain high production standards, offering them the finest raw materials to create top-tier products. Our dedicated service and consistent product quality make us the go-to choice for factories seeking a reliable partner for their agricultural needs.
+
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->	
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{% static 'assets/images/new-cars-model/juice.jpg'%}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Fruit Juice Product</a></h2>
+											<p>
+											Whether it’s a burst of citrus, the sweetness of berries, or the richness of tropical fruits, our fruit juices bring the vibrant flavors of nature straight to your glass. 🍍🍉 Every sip is a delicious reminder of the goodness that comes from nature’s bounty, designed to hydrate and energize while supporting a healthier lifestyle.
+                                            </p>
+											<p class="new-cars-para2">
+											🍊🍓🌱 Made with the freshest ingredients, our juices are packed with essential vitamins, minerals, and antioxidants that provide a natural boost to your day. We prioritize quality by using sustainably sourced fruits, ensuring each bottle is free from preservatives and artificial additives.
+
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+					</div><!--/#new-cars-carousel-->
+				</div><!--/.new-cars-content-->
+			</div><!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+
+
+		<!-- clients-say strat -->
+	<section id="clients-say" class="clients-say">
+    <div class="container">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+        </div><!--/.section-header-->
+        <div class="row">
+            <div class="owl-carousel testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="single-testimonial-box">
+                        <div class="testimonial-description">
+                            <div class="testimonial-info">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'assets/images/clients/john_gitau.jpg' %}" alt="John Gitau" />
+                                </div><!--/.testimonial-img-->
+                            </div><!--/.testimonial-info-->
+                            <div class="testimonial-comment">
+                                <p>
+                                    "EcoBora has revolutionized how I sell my produce. The service and sustainability are unmatched. I highly recommend their services."
+                                </p>
+                            </div><!--/.testimonial-comment-->
+                            <div class="testimonial-person">
+                                <h2><a href="#">John Gitau</a></h2>
+                                <h4>Nairobi, Kenya</h4>
+                            </div><!--/.testimonial-person-->
+                        </div><!--/.testimonial-description-->
+                    </div><!--/.single-testimonial-box-->
+                </div><!--/.col-->
+
+                <!-- Testimonial 2 -->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="single-testimonial-box">
+                        <div class="testimonial-description">
+                            <div class="testimonial-info">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'assets/images/clients/sophia_wanjohi.jpg' %}" alt="Sophia Wanjohi" />
+                                </div><!--/.testimonial-img-->
+                            </div><!--/.testimonial-info-->
+                            <div class="testimonial-comment">
+                                <p>
+                                    "Thanks to EcoBora, our factory never runs out of fresh fruits for production. Their reliable service has greatly improved our operations."
+                                </p>
+                            </div><!--/.testimonial-comment-->
+                            <div class="testimonial-person">
+                                <h2><a href="#">Sophia Wanjohi</a></h2>
+                                <h4>Thika, Kenya</h4>
+                            </div><!--/.testimonial-person-->
+                        </div><!--/.testimonial-description-->
+                    </div><!--/.single-testimonial-box-->
+                </div><!--/.col-->
+
+                <!-- Testimonial 3 -->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="single-testimonial-box">
+                        <div class="testimonial-description">
+                            <div class="testimonial-info">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'assets/images/clients/grace_mwema.jpg' %}" alt="Grace Mwema" />
+                                </div><!--/.testimonial-img-->
+                            </div><!--/.testimonial-info-->
+                            <div class="testimonial-comment">
+                                <p>
+                                    "Working with EcoBora has been a game-changer for our business. Their attention to quality and timely deliveries is exceptional."
+                                </p>
+                            </div><!--/.testimonial-comment-->
+                            <div class="testimonial-person">
+                                <h2><a href="#">Grace Mwema</a></h2>
+                                <h4>Mombasa, Kenya</h4>
+                            </div><!--/.testimonial-person-->
+                        </div><!--/.testimonial-description-->
+                    </div><!--/.single-testimonial-box-->
+                </div><!--/.col-->
+
+                <!-- Testimonial 4 -->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="single-testimonial-box">
+                        <div class="testimonial-description">
+                            <div class="testimonial-info">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'assets/images/clients/samuel_ondiek.jpg' %}" alt="Samuel Ondiek" />
+                                </div><!--/.testimonial-img-->
+                            </div><!--/.testimonial-info-->
+                            <div class="testimonial-comment">
+                                <p>
+                                    "EcoBora provides high-quality produce in a sustainable manner. Their service has made our business more efficient and eco-friendly."
+                                </p>
+                            </div><!--/.testimonial-comment-->
+                            <div class="testimonial-person">
+                                <h2><a href="#">Samuel Ondiek</a></h2>
+                                <h4>Kisumu, Kenya</h4>
+                            </div><!--/.testimonial-person-->
+                        </div><!--/.testimonial-description-->
+                    </div><!--/.single-testimonial-box-->
+                </div><!--/.col-->
+            </div><!--/.testimonial-carousel-->
+        </div><!--/.row-->
+    </div><!--/.container-->
+</section><!--/.clients-say-->
+<!--/.clients-say-->
+		<!-- clients-say end -->
+
+		<!--brand strat -->
+
+		<!--blog start -->
+		<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">Eco Bora</a>
+								</div>
+								<p>
+                                     Empowering farmers and industries with sustainable solutions, bridging the gap between fresh farm produce and ready markets, while minimizing waste and promoting a healthier planet.
+                                </p>
+								<div class="footer-contact">
+									<p>markmurangiri885@gmail.com</p>
+									<p>+254794347868</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>about Eco</h2>
+								<ul>
+									<li><a href="#">about us</a></li>
+									<li><a href="#">career</a></li>
+									<li><a href="#">terms <span> of service</span></a></li>
+									<li><a href="#">privacy policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>Top products</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+										<ul>
+                                            <li><a href="#">Poultry</a></li>
+											<li><a href="#">Vegetables</a></li>
+											<li><a href="#">cereals</a></li>
+											<li><a href="#">Fruits</a></li>
+											<li><a href="#">Milk</a></li>
+										</ul>
+									</div>
+									<div class="col-md-5 col-xs-6">
+										<ul>
+
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>news letter</h2>
+								<div class="footer-newsletter">
+									<p>
+										Subscribe to get latest news  update and informations
+									</p>
+								</div>
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+                                        <label>
+                                            <input type="text" class="form-control" placeholder="Add Email">
+                                        </label>
+                                    </div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-arrow-right"></i></span>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; copyright.designed and developed by <a href="https://www.themesine.com/">Mark Murangiri</a>.
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>	
+							</div>
+						</div>
+					</div>
+				</div><!--/.footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="{% static 'assets/js/jquery.js' %}"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+<!-- bootsnav js -->
+<script src="{% static 'assets/js/bootsnav.js' %}"></script>
+
+<!-- owl.carousel.js -->
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        
+    </body>
+	
+</html>
